@@ -1,0 +1,87 @@
+@use "../../base/vars" as v;
+
+footer{
+        width: 100%;
+        background-color: black;
+        padding-bottom: 19px;
+
+    .container {
+        
+        .top{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 58px;
+            border-bottom: 1px solid v.$light-mode-title;
+            
+            .mail-section{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+               
+                .letter{
+                    font-size: v.$font-size-nav;
+                    color:v.$light-mode-gray;
+                    font-weight: v.$font-weight-lbold;
+                }
+                .input{
+                    display: flex;
+                    justify-content: space-between;
+                    background-color: white;
+                    align-items: center;
+                    border:1px solid v.$light-mode-gray;
+                    input{
+                        padding: 12px 16px;
+                    }
+                    a{
+                        margin-right: 8px;
+                    }
+                }
+                
+            }
+            .info-section{
+                display: flex;
+                ul{
+                    li{
+                        color:v.$light-mode-footer;
+                        font-size: v.$font-size-nav;
+                        font-weight: v.$font-weight-lbold;
+                    }
+                }
+            }
+            .social-media-info{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-around;
+                h5{
+                    font-size: v.$font-size-xs;
+                    font-weight: v.$font-weight-normal;
+                    color: v.$light-mode-btn-text;
+                }
+                .social-media-icons{
+                    cursor: pointer;
+                    display: flex;
+                    justify-content: space-between;
+                    max-width: 180px;
+                    gap: 31px;
+                    svg{
+                        &:hover{
+                            border: 2px solid blue;
+                        }
+                    }
+                    
+                }
+            }
+        }
+
+        .bottom {
+            margin-top: 18px;
+            text-align: center;
+            font-size: v.$font-size-xs;
+            font-weight: v.$font-weight-lbold;
+            color:v.$light-mode-btn-text
+        }
+    }
+    
+}

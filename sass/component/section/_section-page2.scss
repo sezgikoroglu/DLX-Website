@@ -1,0 +1,79 @@
+.section2-1{
+    .container{
+        .wrapper{
+            margin-bottom: 7.37rem;
+            h1{
+                padding-bottom: 33px;
+                border-bottom: 1px solid #949494;
+                width: 60%;
+            }
+            .info{
+                width: 50%;
+                margin-top: 1.875rem;
+                margin-left: 21.875rem;
+                margin-bottom: 7.25rem;
+            }
+            .testiomonials{
+                margin-top: 5.18rem;
+            }
+            .deco{
+                padding-left: 40px;
+                .decoration{
+                    margin-bottom: 21px;
+                    &:before{
+                        
+                            content: "";
+                            position: absolute;
+                            top: 10px;
+                            left: -40px;
+                            width: 33px;
+                            height: 33px;
+                            background-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 33 33"><path d="M33 0L23.6628 0L0 0L0 9.33721L23.6628 9.33721L23.6628 33H33V9.33721V0Z" fill="%23F89B3A"/></svg>');
+                            background-size: cover;
+                            background-repeat: no-repeat;
+                            background-position: center center;
+                        
+                    }
+                }
+            }
+            .name{
+                font-size: 22px;
+                font-weight: 400;
+                line-height: 50px;
+                letter-spacing: 0em;
+            }
+        }
+    }
+}
+
+.section2-2{
+    .container{
+        .right-bar{
+            .wrapper{
+                margin-bottom: 10rem;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                row-gap: 22px;
+                -moz-column-gap: 55px;
+                column-gap: 55px;
+                
+                .profil-card{
+                    .name{
+                        font-family: Almarai;
+                        font-size: 20px;
+                        font-weight: 400;
+                        line-height: 60px;
+                        letter-spacing: 0em;
+                    }
+                }
+           
+            }
+        }
+    }
+}
+
+.section3-3{
+    .link-list-li:last-child{
+        border-bottom: none;
+    }
+}

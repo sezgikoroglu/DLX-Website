@@ -1,0 +1,47 @@
+@use "../../base/vars" as v;
+
+header{
+    //border-bottom: 1px solid red;
+    .container{
+        .wrapper{
+            display:flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 2rem 0;
+            .c-item-01{
+                display: flex;
+                width: 30%;
+                gap:57px;
+                p{
+                    font-size: v.$font-size-nav;
+                    color: v.$light-mode-nav;
+                    line-height: 17,86px;
+                    color:#BCBCBC
+                    
+                }
+            }
+    
+            .c-item-02{
+                width: 30%;
+                display: flex;
+                gap: 35px;
+    
+                .vector{
+                    width: 1px;
+                    height: 22px;
+                    background-color: v.$light-mode-nav;
+                }
+    
+                p{
+                    font-size: v.$font-size-nav;
+                    color: v.$light-mode-nav;
+                }
+            }
+            .c-item-03{
+                width: 40%;
+                text-align: end;
+                
+            }
+        }
+    }
+}
