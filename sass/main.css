@@ -102,14 +102,14 @@ img, svg {
 }
 
 .main-title {
-  font-size: 80px;
+  font-size: 5rem;
   font-weight: 300;
   line-height: 85px;
   letter-spacing: 0em;
 }
 
 .main-text {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 300;
   line-height: 45px;
   letter-spacing: 0em;
@@ -117,7 +117,7 @@ img, svg {
 }
 
 .side-title {
-  font-size: 36px;
+  font-size: 2.25rem;
   font-weight: 300;
   line-height: 60px;
   letter-spacing: 0em;
@@ -126,7 +126,7 @@ img, svg {
 }
 
 .normal-text {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 300;
   line-height: 30px;
   letter-spacing: 0em;
@@ -157,7 +157,7 @@ img, svg {
 
 .title-2 {
   font-family: Almarai;
-  font-size: 60px;
+  font-size: 3.75rem;
   font-weight: 300;
   line-height: 70px;
   letter-spacing: 0em;
@@ -165,7 +165,7 @@ img, svg {
 }
 
 .small-text {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 300;
   line-height: 40px;
   letter-spacing: 0em;
@@ -182,7 +182,7 @@ img, svg {
 }
 
 .brand-sm {
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 400;
   line-height: 50px;
   letter-spacing: 0em;
@@ -221,7 +221,7 @@ img, svg {
 }
 
 .link {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 400;
   color: #949494;
   line-height: 22px;
@@ -246,7 +246,7 @@ img, svg {
   width: 80%;
   line-height: 52px;
   color: #000000;
-  font-size: 46px;
+  font-size: 2.875rem;
   font-weight: 300;
   margin-bottom: 22px;
 }
@@ -258,7 +258,6 @@ footer {
 }
 footer .container .top {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   padding: 58px;
   border-bottom: 1px solid #949494;
@@ -266,10 +265,10 @@ footer .container .top {
 footer .container .top .mail-section {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 footer .container .top .mail-section .letter {
-  font-size: 16px;
+  font-size: 1rem;
   color: #F6F5F3;
   font-weight: 400;
 }
@@ -288,10 +287,12 @@ footer .container .top .mail-section .input a {
 }
 footer .container .top .info-section {
   display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
-footer .container .top .info-section ul li {
+footer .container .top .info-section li {
   color: #BDBDBD;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
 }
 footer .container .top .social-media-info {
@@ -301,7 +302,7 @@ footer .container .top .social-media-info {
   justify-content: space-around;
 }
 footer .container .top .social-media-info h5 {
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 300;
   color: #ffffff;
 }
@@ -318,7 +319,7 @@ footer .container .top .social-media-info .social-media-icons svg:hover {
 footer .container .bottom {
   margin-top: 18px;
   text-align: center;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 400;
   color: #ffffff;
 }
@@ -335,7 +336,7 @@ header .container .wrapper .c-item-01 {
   gap: 57px;
 }
 header .container .wrapper .c-item-01 p {
-  font-size: 16px;
+  font-size: 1rem;
   color: #BCBCBC;
   line-height: 17, 86px;
   color: #BCBCBC;
@@ -351,7 +352,7 @@ header .container .wrapper .c-item-02 .vector {
   background-color: #BCBCBC;
 }
 header .container .wrapper .c-item-02 p {
-  font-size: 16px;
+  font-size: 1rem;
   color: #BCBCBC;
 }
 header .container .wrapper .c-item-03 {
@@ -534,12 +535,12 @@ header .container .wrapper .c-item-03 {
   display: flex;
   align-items: center;
   gap: 12px;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 400;
 }
 .section1-4 .container .content-grid .c-wrapper .c-item-01 .c-item-01-main .c-item-01-a .brand {
   color: #F89B3A;
-  font-size: 16px;
+  font-size: 1rem;
 }
 .section1-4 .container .content-grid .c-wrapper .c-item-01 .c-item-01-main .c-item-01-a .hr {
   width: 1px;
@@ -549,7 +550,7 @@ header .container .wrapper .c-item-03 {
 .section1-4 .container .content-grid .c-wrapper .c-item-01 .c-item-01-main .c-item-01-b {
   width: 308px;
   padding-right: 20px;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 400;
   line-height: 35px;
 }
@@ -559,7 +560,7 @@ header .container .wrapper .c-item-03 {
   font-weight: 300;
 }
 .section1-4 .container .content-grid .c-wrapper .c-item-01 .c-item-01-main .c-item-01-d {
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 50px;
   font-weight: 400;
 }/*# sourceMappingURL=main.css.map */

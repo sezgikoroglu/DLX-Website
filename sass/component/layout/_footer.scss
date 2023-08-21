@@ -9,7 +9,7 @@ footer{
         
         .top{
             display: flex;
-            align-items: center;
+            //align-items: center;
             justify-content: space-between;
             padding: 58px;
             border-bottom: 1px solid v.$light-mode-title;
@@ -17,7 +17,7 @@ footer{
             .mail-section{
                 display: flex;
                 flex-direction: column;
-                justify-content: space-between;
+                justify-content: space-around;
                
                 .letter{
                     font-size: v.$font-size-nav;
@@ -40,14 +40,17 @@ footer{
                 
             }
             .info-section{
+
                 display: flex;
-                ul{
+                flex-direction: column;
+                justify-content: space-around;
+
                     li{
                         color:v.$light-mode-footer;
                         font-size: v.$font-size-nav;
                         font-weight: v.$font-weight-lbold;
                     }
-                }
+                
             }
             .social-media-info{
                 display: flex;
