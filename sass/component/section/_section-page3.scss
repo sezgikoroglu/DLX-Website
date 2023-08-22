@@ -2,27 +2,41 @@
     .container{
         .wrapper{
             margin-bottom: 52px;
+            @media (max-width: $md) {
+                margin-bottom: 38px;
+            }
             h1{
                 max-width: 50%;
                 text-align: left;
                 margin-bottom: 23px;
                 border-bottom: 1px solid #949494;
+                @media (max-width: $sm) {
+                    max-width: 100%;;
+                }
             }
             .person-info{
                 display: flex;
                 align-items: center ;
                 gap: 140px;
                 img{
-                    max-width: 50%;
+                    max-width: 70%;
+                }
+
+                @media (max-width: $sm) {
+                    display: flex;
+                    flex-direction: column; 
+                    gap: 30px;
                 }
                
                 .social-info {
                     ul {
                       li {
                         position: relative;
-                        width: 255px;
-                        height: 33px;
                         margin-bottom: 34px;
+                        @media (max-width: $sm) {
+                            font-size: 1rem;
+                            margin-bottom: 15px;
+                        }
                   
                         &:before {
                           content: "";
@@ -34,6 +48,11 @@
                           background-size: cover;
                           background-repeat: no-repeat;
                           background-position: center center;
+                          @media (max-width: $sm) {
+                                width: 15px;
+                                height: 15px;
+                                top: 5px;
+                            }
                         }
                         &.phone:before {
                             background-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path d="M2.67962 1.84669L3.81921 0.707107C4.20973 0.316583 4.8429 0.316582 5.23342 0.707106L8.24026 3.71395C8.63079 4.10447 8.63079 4.73763 8.24026 5.12816L6.18474 7.18368C5.8544 7.51402 5.7725 8.01869 5.98143 8.43655C7.18921 10.8521 9.14789 12.8108 11.5635 14.0186C11.9813 14.2275 12.486 14.1456 12.8163 13.8153L14.8718 11.7597C15.2624 11.3692 15.8955 11.3692 16.2861 11.7597L19.2929 14.7666C19.6834 15.1571 19.6834 15.7903 19.2929 16.1808L18.1533 17.3204C16.042 19.4317 12.6994 19.6693 10.3107 17.8777L8.26015 16.3398C6.51662 15.0322 4.9678 13.4834 3.66015 11.7399L2.12226 9.68933C0.330722 7.30061 0.568273 3.95804 2.67962 1.84669Z" fill="black"/></svg>');
@@ -58,6 +77,12 @@
     .container{
         .content{
             margin-bottom: 9.25rem;
+            @media (max-width: $md) {
+                margin-bottom: 7rem;
+            }
+            @media (max-width: $md) {
+                margin-bottom: 5rem;
+            }
         }
     }
 }
@@ -66,6 +91,12 @@
     .container{
         .content{
             margin-bottom: 16rem;
+            @media (max-width: $md) {
+                margin-bottom: 7rem;
+            }
+            @media (max-width: $md) {
+                margin-bottom: 5rem;
+            }
         }
     }
 }

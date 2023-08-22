@@ -3,12 +3,40 @@ html {
 }
 
 body {
+  font-family: "A";
   min-height: 100%;
   background-color: #FFF;
   overflow-x: hidden;
   font-size: 24px;
   line-height: 1.5;
   color: black;
+  transition: background-color 1s ease-in-out;
+}
+body.dark {
+  background-color: black;
+  color: white;
+}
+body.dark svg path {
+  stroke: white;
+}
+body.dark svg circle {
+  stroke: white;
+}
+body.dark ul {
+  color: white;
+}
+body.dark button {
+  background-color: #FFF;
+  color: black;
+}
+body.dark input::-moz-placeholder {
+  color: black;
+}
+body.dark input::placeholder {
+  color: black;
+}
+body.dark a {
+  color: #FFF;
 }
 
 img, svg {
@@ -22,13 +50,13 @@ img, svg {
 }
 
 .tab {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 18px;
   letter-spacing: 0px;
   text-align: left;
   color: #CCCCCC;
-  margin-bottom: 51px;
+  margin-bottom: 3.18rem;
 }
 
 *, *::before, *::after {
@@ -69,12 +97,40 @@ html {
 }
 
 body {
+  font-family: "A";
   min-height: 100%;
   background-color: #FFF;
   overflow-x: hidden;
   font-size: 24px;
   line-height: 1.5;
   color: black;
+  transition: background-color 1s ease-in-out;
+}
+body.dark {
+  background-color: black;
+  color: white;
+}
+body.dark svg path {
+  stroke: white;
+}
+body.dark svg circle {
+  stroke: white;
+}
+body.dark ul {
+  color: white;
+}
+body.dark button {
+  background-color: #FFF;
+  color: black;
+}
+body.dark input::-moz-placeholder {
+  color: black;
+}
+body.dark input::placeholder {
+  color: black;
+}
+body.dark a {
+  color: #FFF;
 }
 
 img, svg {
@@ -88,13 +144,13 @@ img, svg {
 }
 
 .tab {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 18px;
   letter-spacing: 0px;
   text-align: left;
   color: #CCCCCC;
-  margin-bottom: 51px;
+  margin-bottom: 3.18rem;
 }
 
 .content {
@@ -107,6 +163,18 @@ img, svg {
   line-height: 85px;
   letter-spacing: 0em;
 }
+@media (max-width: 1025px) {
+  .main-title {
+    font-size: 4.2rem;
+    line-height: 4.6rem;
+  }
+}
+@media (max-width: 769px) {
+  .main-title {
+    font-size: 3rem;
+    line-height: 3.2rem;
+  }
+}
 
 .main-text {
   font-size: 1.5rem;
@@ -115,14 +183,38 @@ img, svg {
   letter-spacing: 0em;
   margin-bottom: 30px;
 }
+@media (max-width: 1025px) {
+  .main-text {
+    font-size: 1.2rem;
+    line-height: 38px;
+  }
+}
+@media (max-width: 769px) {
+  .main-text {
+    font-size: 1rem;
+    line-height: 32px;
+  }
+}
 
 .side-title {
   font-size: 2.25rem;
   font-weight: 300;
-  line-height: 60px;
+  line-height: 3.75rem;
   letter-spacing: 0em;
   text-align: left;
   color: #949494;
+}
+@media (max-width: 1025px) {
+  .side-title {
+    font-size: 2rem;
+    line-height: 2.8rem;
+  }
+}
+@media (max-width: 769px) {
+  .side-title {
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+  }
 }
 
 .normal-text {
@@ -132,13 +224,39 @@ img, svg {
   letter-spacing: 0em;
   text-align: left;
 }
+@media (max-width: 1025px) {
+  .normal-text {
+    font-size: 1rem;
+  }
+}
+
+.content {
+  display: flex;
+}
+@media (max-width: 1025px) {
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
 
 .left-bar {
   width: 30%;
 }
+@media (max-width: 1025px) {
+  .left-bar {
+    width: 100%;
+  }
+}
 
 .right-bar {
   width: 70%;
+}
+@media (max-width: 1025px) {
+  .right-bar {
+    width: 100%;
+  }
 }
 
 .tab {
@@ -151,10 +269,6 @@ img, svg {
   margin-bottom: 51px;
 }
 
-.content {
-  display: flex;
-}
-
 .title-2 {
   font-family: Almarai;
   font-size: 3.75rem;
@@ -162,6 +276,18 @@ img, svg {
   line-height: 70px;
   letter-spacing: 0em;
   margin-bottom: 50px;
+}
+@media (max-width: 1025px) {
+  .title-2 {
+    font-size: 3.125rem;
+    line-height: 3.5rem;
+  }
+}
+@media (max-width: 769px) {
+  .title-2 {
+    font-size: 2.5rem;
+    line-height: 2.8rem;
+  }
 }
 
 .small-text {
@@ -192,16 +318,36 @@ img, svg {
 .info-brand-title {
   width: 80%;
   padding-right: 20px;
-  font-size: 46px;
+  font-size: 2.875rem;
   font-weight: 400;
   line-height: 60px;
   margin-bottom: 18px;
 }
+@media (max-width: 1025px) {
+  .info-brand-title {
+    width: 90%;
+    font-size: 1.8rem;
+    line-height: 45px;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 769px) {
+  .info-brand-title {
+    font-size: 1.4rem;
+    line-height: 32px;
+  }
+}
 
 .info-name {
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 25px;
   font-weight: 300;
+}
+@media (max-width: 769px) {
+  .info-name {
+    font-size: 0.9rem;
+    line-height: 20px;
+  }
 }
 
 .card-brand {
@@ -227,28 +373,69 @@ img, svg {
   line-height: 22px;
   letter-spacing: 0em;
 }
+@media (max-width: 769px) {
+  .link {
+    font-size: 0.8rem;
+  }
+}
 
 .link-list-ul {
   display: flex;
   flex-direction: column;
   gap: 25px;
+  color: #000000;
+}
+@media (max-width: 1025px) {
+  .link-list-ul {
+    gap: 15px;
+  }
 }
 
 .link-list-li {
-  width: 880px;
+  width: 90%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   border-bottom: 2px solid #949494;
 }
+@media (max-width: 1025px) {
+  .link-list-li {
+    width: 100%;
+  }
+}
 
 .link-list-p {
   width: 80%;
   line-height: 52px;
-  color: #000000;
   font-size: 2.875rem;
   font-weight: 300;
   margin-bottom: 22px;
+}
+@media (max-width: 1025px) {
+  .link-list-p {
+    font-size: 2rem;
+    line-height: 44px;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 769px) {
+  .link-list-p {
+    font-size: 1.5rem;
+    line-height: 30px;
+    margin-bottom: 10px;
+  }
+}
+
+.dark {
+  color: white;
+}
+
+@font-face {
+  font-family: "Almarai";
+  src: url("https://fonts.googleapis.com/css2?family=Almarai:wght@300&family=Nunito+Sans:wght@300&display=swap");
+}
+body {
+  font-family: "Almarai";
 }
 
 footer {
@@ -261,6 +448,13 @@ footer .container .top {
   justify-content: space-between;
   padding: 58px;
   border-bottom: 1px solid #949494;
+}
+@media (max-width: 1025px) {
+  footer .container .top {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
 }
 footer .container .top .mail-section {
   display: flex;
@@ -330,10 +524,20 @@ header .container .wrapper {
   justify-content: space-between;
   padding: 2rem 0;
 }
+@media (max-width: 1025px) {
+  header .container .wrapper {
+    padding: 1rem;
+  }
+}
 header .container .wrapper .c-item-01 {
   display: flex;
   width: 30%;
   gap: 57px;
+}
+@media (max-width: 1025px) {
+  header .container .wrapper .c-item-01 {
+    gap: 38px;
+  }
 }
 header .container .wrapper .c-item-01 p {
   font-size: 1rem;
@@ -354,6 +558,11 @@ header .container .wrapper .c-item-02 .vector {
 header .container .wrapper .c-item-02 p {
   font-size: 1rem;
   color: #BCBCBC;
+}
+@media (max-width: 1025px) {
+  header .container .wrapper .c-item-02 {
+    display: none;
+  }
 }
 header .container .wrapper .c-item-03 {
   width: 40%;
@@ -377,11 +586,21 @@ header .container .wrapper .c-item-03 {
 .section3-1 .container .wrapper {
   margin-bottom: 52px;
 }
+@media (max-width: 1025px) {
+  .section3-1 .container .wrapper {
+    margin-bottom: 38px;
+  }
+}
 .section3-1 .container .wrapper h1 {
   max-width: 50%;
   text-align: left;
   margin-bottom: 23px;
   border-bottom: 1px solid #949494;
+}
+@media (max-width: 769px) {
+  .section3-1 .container .wrapper h1 {
+    max-width: 100%;
+  }
 }
 .section3-1 .container .wrapper .person-info {
   display: flex;
@@ -389,13 +608,24 @@ header .container .wrapper .c-item-03 {
   gap: 140px;
 }
 .section3-1 .container .wrapper .person-info img {
-  max-width: 50%;
+  max-width: 70%;
+}
+@media (max-width: 769px) {
+  .section3-1 .container .wrapper .person-info {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
 }
 .section3-1 .container .wrapper .person-info .social-info ul li {
   position: relative;
-  width: 255px;
-  height: 33px;
   margin-bottom: 34px;
+}
+@media (max-width: 769px) {
+  .section3-1 .container .wrapper .person-info .social-info ul li {
+    font-size: 1rem;
+    margin-bottom: 15px;
+  }
 }
 .section3-1 .container .wrapper .person-info .social-info ul li:before {
   content: "";
@@ -407,6 +637,13 @@ header .container .wrapper .c-item-03 {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+}
+@media (max-width: 769px) {
+  .section3-1 .container .wrapper .person-info .social-info ul li:before {
+    width: 15px;
+    height: 15px;
+    top: 5px;
+  }
 }
 .section3-1 .container .wrapper .person-info .social-info ul li.phone:before {
   background-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path d="M2.67962 1.84669L3.81921 0.707107C4.20973 0.316583 4.8429 0.316582 5.23342 0.707106L8.24026 3.71395C8.63079 4.10447 8.63079 4.73763 8.24026 5.12816L6.18474 7.18368C5.8544 7.51402 5.7725 8.01869 5.98143 8.43655C7.18921 10.8521 9.14789 12.8108 11.5635 14.0186C11.9813 14.2275 12.486 14.1456 12.8163 13.8153L14.8718 11.7597C15.2624 11.3692 15.8955 11.3692 16.2861 11.7597L19.2929 14.7666C19.6834 15.1571 19.6834 15.7903 19.2929 16.1808L18.1533 17.3204C16.042 19.4317 12.6994 19.6693 10.3107 17.8777L8.26015 16.3398C6.51662 15.0322 4.9678 13.4834 3.66015 11.7399L2.12226 9.68933C0.330722 7.30061 0.568273 3.95804 2.67962 1.84669Z" fill="black"/></svg>');
@@ -421,16 +658,41 @@ header .container .wrapper .c-item-03 {
 .section3-2 .container .content {
   margin-bottom: 9.25rem;
 }
+@media (max-width: 1025px) {
+  .section3-2 .container .content {
+    margin-bottom: 7rem;
+  }
+}
+@media (max-width: 1025px) {
+  .section3-2 .container .content {
+    margin-bottom: 5rem;
+  }
+}
 
 .section3-3 .container .content {
   margin-bottom: 16rem;
+}
+@media (max-width: 1025px) {
+  .section3-3 .container .content {
+    margin-bottom: 7rem;
+  }
+}
+@media (max-width: 1025px) {
+  .section3-3 .container .content {
+    margin-bottom: 5rem;
+  }
 }
 
 .section2-1 .container .wrapper {
   margin-bottom: 7.37rem;
 }
+@media (max-width: 1025px) {
+  .section2-1 .container .wrapper {
+    margin-bottom: 4rem;
+  }
+}
 .section2-1 .container .wrapper h1 {
-  padding-bottom: 33px;
+  padding-bottom: 2.063rem;
   border-bottom: 1px solid #949494;
   width: 60%;
 }
@@ -440,14 +702,20 @@ header .container .wrapper .c-item-03 {
   margin-left: 21.875rem;
   margin-bottom: 7.25rem;
 }
+@media (max-width: 1025px) {
+  .section2-1 .container .wrapper .info {
+    width: 100%;
+    margin: 1rem auto 3rem;
+  }
+}
 .section2-1 .container .wrapper .testiomonials {
   margin-top: 5.18rem;
 }
 .section2-1 .container .wrapper .deco {
-  padding-left: 40px;
+  padding-left: 2.5rem;
 }
 .section2-1 .container .wrapper .deco .decoration {
-  margin-bottom: 21px;
+  margin-bottom: 1.313rem;
 }
 .section2-1 .container .wrapper .deco .decoration:before {
   content: "";
@@ -462,7 +730,7 @@ header .container .wrapper .c-item-03 {
   background-position: center center;
 }
 .section2-1 .container .wrapper .name {
-  font-size: 22px;
+  font-size: 1.375rem;
   font-weight: 400;
   line-height: 50px;
   letter-spacing: 0em;
@@ -476,6 +744,13 @@ header .container .wrapper .c-item-03 {
   -moz-column-gap: 55px;
   column-gap: 55px;
 }
+@media (max-width: 769px) {
+  .section2-2 .container .right-bar .wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 12px;
+    margin-bottom: 5rem;
+  }
+}
 .section2-2 .container .right-bar .wrapper .profil-card .name {
   font-family: Almarai;
   font-size: 20px;
@@ -483,7 +758,21 @@ header .container .wrapper .c-item-03 {
   line-height: 60px;
   letter-spacing: 0em;
 }
+@media (max-width: 769px) {
+  .section2-2 .container .right-bar .wrapper .profil-card .name {
+    font-size: 0.9rem;
+    line-height: 20px;
+  }
+}
 
+.section2-3 .content {
+  margin-bottom: 17rem;
+}
+@media (max-width: 769px) {
+  .section2-3 .content {
+    margin-bottom: 5rem;
+  }
+}
 .section2-3 .link-list-li:last-child {
   border-bottom: none;
 }
@@ -492,6 +781,11 @@ header .container .wrapper .c-item-03 {
   display: flex;
   flex-direction: column;
   gap: 3.75rem;
+}
+@media (max-width: 1025px) {
+  .section1-1 .container .wrapper {
+    gap: 2.15rem;
+  }
 }
 .section1-1 .container .wrapper button {
   width: 280px;
@@ -502,34 +796,75 @@ header .container .wrapper .c-item-03 {
   margin-top: 6.3rem;
   margin-bottom: 6.3rem;
 }
+@media (max-width: 1025px) {
+  .section1-2 .container .content {
+    margin-bottom: 4rem;
+    margin-top: 4rem;
+  }
+}
 .section1-2 .container .content .right-bar {
   display: flex;
   flex-direction: column;
   gap: 3.75rem;
 }
+@media (max-width: 1025px) {
+  .section1-2 .container .content .right-bar {
+    gap: 2rem;
+  }
+}
 
 .section1-3 .container .content {
   margin-bottom: 8.62rem;
+}
+@media (max-width: 1025px) {
+  .section1-3 .container .content {
+    margin-bottom: 6rem;
+  }
 }
 
 .section1-4 .container h3 {
   margin-bottom: 3.15rem;
 }
+@media (max-width: 1025px) {
+  .section1-4 .container h3 {
+    margin-bottom: 2.15rem;
+  }
+}
 .section1-4 .container .content-grid {
   margin-bottom: 6rem;
   display: flex;
   justify-content: space-between;
+  gap: 10px;
+}
+@media (max-width: 1025px) {
+  .section1-4 .container .content-grid {
+    margin-bottom: 4rem;
+  }
+}
+@media (max-width: 1025px) {
+  .section1-4 .container .content-grid img {
+    display: none;
+  }
 }
 .section1-4 .container .content-grid .c-wrapper .c-item-01 {
   display: flex;
   flex-direction: column;
   gap: 63px;
-  width: 373px;
+}
+@media (max-width: 1025px) {
+  .section1-4 .container .content-grid .c-wrapper .c-item-01 {
+    gap: 30px;
+  }
 }
 .section1-4 .container .content-grid .c-wrapper .c-item-01 .c-item-01-main {
   display: flex;
   flex-direction: column;
   gap: 18px;
+}
+@media (max-width: 1025px) {
+  .section1-4 .container .content-grid .c-wrapper .c-item-01 .c-item-01-main {
+    gap: 10px;
+  }
 }
 .section1-4 .container .content-grid .c-wrapper .c-item-01 .c-item-01-main .c-item-01-a {
   display: flex;
@@ -548,14 +883,19 @@ header .container .wrapper .c-item-03 {
   height: 14px;
 }
 .section1-4 .container .content-grid .c-wrapper .c-item-01 .c-item-01-main .c-item-01-b {
-  width: 308px;
-  padding-right: 20px;
+  width: 60%;
+  padding-right: 1.25rem;
   font-size: 1.5rem;
   font-weight: 400;
   line-height: 35px;
 }
+@media (max-width: 1025px) {
+  .section1-4 .container .content-grid .c-wrapper .c-item-01 .c-item-01-main .c-item-01-b {
+    width: 100%;
+  }
+}
 .section1-4 .container .content-grid .c-wrapper .c-item-01 .c-item-01-main .c-item-01-c {
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 25px;
   font-weight: 300;
 }

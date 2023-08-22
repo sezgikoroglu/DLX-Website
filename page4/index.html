@@ -11,7 +11,9 @@
         <div class="container">
             <div class="wrapper">
                 <div class="c-item-01">
-                    <svg class="switch" onclick="switchMode()" width="43" height="23" viewBox="0 0 43 23" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <svg onclick="switchMode()" 
+                        id="hamburger-menu"
+                         width="43" height="23" viewBox="0 0 43 23" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                         <path d="M1 1H28.7353" stroke="black" stroke-width="2" stroke-linecap="square"/>
                         <path d="M1 11.8528H42" stroke="black" stroke-width="2" stroke-linecap="square"/>
                         <path d="M1 21.5H20.2941" stroke="black" stroke-width="2" stroke-linecap="square"/>
@@ -20,9 +22,9 @@
                     <p>Menu</p>
                 </div>
                 <div class="c-item-02">
-                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg  id="search" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M15.4424 16.0156L20.4377 20.5209" stroke="black" stroke-width="2" />
-                        <circle cx="9.94904" cy="9.50993" r="8.5" transform="rotate(0.0599245 9.94904 9.50993)" stroke="black"
+                        <circle cx="9.94904" cy="9.50993" id="myCircle" r="8.5" transform="rotate(0.0599245 9.94904 9.50993)" stroke="black"
                             stroke-width="2" />
                     </svg>
         
@@ -72,15 +74,15 @@
         <section class="section4-1">
             <div class="container">
                 <div class="content">
-                        <h3 class="left-bar side-title">
+                        <h2 class="left-bar side-title">
                             Lewis Cohen 
                             <br>
                             Januar 26 (2023)
-                        </h3>
+                        </h2>
                         <div class="right-bar ">
-                            <h2 class="title-2">
+                            <h1 class="title-2">
                                 Chalk and Cheese: When Crypto Assets Meet the Securities Laws
-                            </h2>
+                            </h1>
                             <p class="main-text">
                                 We frequently hear from regulators that they view most crypto assets as securities and, as such, those crypto assets need to be registered with the U.S. Securities and Exchange Commission if they are to be offered to the general public or held by more than 500 “retail” investors. This latter test, in particular, would likely ensnare most large-cap crypto assets available today on Coinbase and other leading marketplaces, even if the assets were not originally offered to the public.
                             </p>
@@ -104,9 +106,9 @@
         <section class="section4-2">
             <div class="container">
                 <div class="content">
-                    <h3 class="left-bar side-title">
+                    <h2 class="left-bar side-title">
                         Related Contet
-                    </h3>
+                    </h2>
                 <div class="right-bar">
                         <div class="c-wrapper">
                             <div class="card-brand">
@@ -262,6 +264,8 @@
             </section>
         </div>
     </footer>
+
+    <script src="../app.js"></script>
 
 </body>
 </html>

@@ -8,10 +8,16 @@ header{
             align-items: center;
             justify-content: space-between;
             padding: 2rem 0;
+            @media (max-width: $md) {
+                padding: 1rem;
+            }
             .c-item-01{
                 display: flex;
                 width: 30%;
                 gap:57px;
+                @media (max-width: $md) {
+                    gap:38px;
+                }
                 p{
                     font-size: v.$font-size-nav;
                     color: v.$light-mode-nav;
@@ -35,6 +41,10 @@ header{
                 p{
                     font-size: v.$font-size-nav;
                     color: v.$light-mode-nav;
+                }
+
+                @media (max-width: $md) {
+                    display: none;
                 }
             }
             .c-item-03{

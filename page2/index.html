@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../sass/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <title>Page2</title>
 </head>
 <body>
@@ -11,7 +12,9 @@
         <div class="container">
             <div class="wrapper">
                 <div class="c-item-01">
-                    <svg class="switch" onclick="switchMode()" width="43" height="23" viewBox="0 0 43 23" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <svg onclick="switchMode()" 
+                        id="hamburger-menu"
+                         width="43" height="23" viewBox="0 0 43 23" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                         <path d="M1 1H28.7353" stroke="black" stroke-width="2" stroke-linecap="square"/>
                         <path d="M1 11.8528H42" stroke="black" stroke-width="2" stroke-linecap="square"/>
                         <path d="M1 21.5H20.2941" stroke="black" stroke-width="2" stroke-linecap="square"/>
@@ -20,9 +23,9 @@
                     <p>Menu</p>
                 </div>
                 <div class="c-item-02">
-                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg  id="search" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M15.4424 16.0156L20.4377 20.5209" stroke="black" stroke-width="2" />
-                        <circle cx="9.94904" cy="9.50993" r="8.5" transform="rotate(0.0599245 9.94904 9.50993)" stroke="black"
+                        <circle cx="9.94904" cy="9.50993" id="myCircle" r="8.5" transform="rotate(0.0599245 9.94904 9.50993)" stroke="black"
                             stroke-width="2" />
                     </svg>
         
@@ -341,5 +344,10 @@
         </div>
     </footer>
 
+   
 </body>
+
+<script src="../app.js">
+   
+</script>
 </html>

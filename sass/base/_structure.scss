@@ -9,12 +9,29 @@ $lg: 1200px;
     display: flex;
 }
 
+// button{
+//     &.dark{
+//         background-color: white;
+//         color:black;
+//         //color: white;
+//     }
+// }
 
 .main-title {
     font-size: v.$font-size-big;
     font-weight: v.$font-weight-normal;
     line-height: 85px;
     letter-spacing: 0em;
+    @media (max-width: $md) {
+		font-size: 4.2rem;
+		line-height: 4.6rem;
+        
+	}
+	@media (max-width: $sm) {
+		font-size: 3rem;
+		line-height: 3.2rem;
+        
+	}
 }
 
 .main-text {
@@ -24,16 +41,33 @@ $lg: 1200px;
     line-height: 45px;
     letter-spacing: 0em;
     margin-bottom: 30px;
+    @media (max-width: $md) {
+		font-size: 1.2rem;
+        line-height: 38px;
+	}
+    @media (max-width: $sm) {
+		font-size: 1rem;
+        line-height: 32px;
+	}
 }
 
 .side-title {
 
     font-size: v.$font-size-title;
     font-weight: v.$font-weight-normal;
-    line-height: 60px;
+    line-height: 3.75rem;
     letter-spacing: 0em;
     text-align: left;
     color: v.$light-mode-title;
+    @media (max-width: $md) {
+		font-size: 2rem;
+		line-height: 2.8rem;
+	}
+    @media (max-width: $sm) {
+		font-size: 1.8rem;
+		line-height: 2.4rem;
+	}
+
 
 }
 
@@ -44,16 +78,39 @@ $lg: 1200px;
     line-height: 30px;
     letter-spacing: 0em;
     text-align: left;
+    @media (max-width: $md) {
+		font-size: 1rem;
+        
+	}
 
+}
+
+.content {
+    display: flex;
+    @media (max-width: $md) {
+		display: flex;
+        flex-direction: column;
+        gap:2rem
+	}
 }
 
 .left-bar {
     width: 30%;
+    @media (max-width: $md) {
+        width: 100%;
+        
+		//flex: 1;
+	}
+    
 
 }
 
 .right-bar {
     width: 70%;
+    @media (max-width: $md) {
+        
+		width: 100%;;
+	}
 }
 
 .tab {
@@ -66,9 +123,7 @@ $lg: 1200px;
     margin-bottom: 51px;
 }
 
-.content {
-    display: flex;
-}
+
 
 .title-2 {
     font-family: Almarai;
@@ -77,6 +132,16 @@ $lg: 1200px;
     line-height: 70px;
     letter-spacing: 0em;
     margin-bottom: 50px;
+    @media (max-width: $md) {
+		font-size:3.125rem;
+		line-height: 3.5rem;
+        
+	}
+	@media (max-width: $sm) {
+		font-size: 2.5rem;
+		line-height: 2.8rem;
+        
+	}
 
 }
 
@@ -115,16 +180,30 @@ $lg: 1200px;
 .info-brand-title {
     width: 80%;
     padding-right: 20px;
-    font-size: 46px;
+    font-size: 2.875rem;
     font-weight: v.$font-weight-lbold;
     line-height: 60px;
     margin-bottom: 18px;
+    @media (max-width: $md) {
+        width: 90%;
+        font-size: 1.8rem;
+        line-height: 45px;
+        margin-bottom: 10px;
+    }
+    @media (max-width: $sm)  {
+        font-size: 1.4rem;
+        line-height: 32px;
+    }
 }
 
 .info-name {
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 25px;
     font-weight: v.$font-weight-normal;
+    @media (max-width: $sm)  {
+        font-size: 0.9rem;
+        line-height: 20px;
+    }
 
 }
 
@@ -152,30 +231,63 @@ $lg: 1200px;
     color:v.$light-mode-title;
     line-height: 22px;
     letter-spacing: 0em;
-
+    @media (max-width: $sm) {
+        font-size: 0.8rem;
+        
+    }
 }
 
 .link-list-ul{
     display: flex;
     flex-direction: column;
     gap: 25px;
+    color:v.$light-mode-text;
+    @media (max-width: $md) {
+        gap:15px
+	}
+    
 }
 
 .link-list-li{
-    width: 880px;
+    width: 90%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 2px solid v.$light-mode-title;;
+    //color:v.$light-mode-text;
+    border-bottom: 2px solid v.$light-mode-title;
+    @media (max-width: $md) {
+        // background-color:rgb(222, 135, 218) ;
+         width: 100%;
+     }
+    
 }
 
 .link-list-p{
     width: 80%;
     line-height: 52px;
-    color:v.$light-mode-text;
     font-size: v.$font-size-lg;
     font-weight: v.$font-weight-normal;
     margin-bottom: 22px;
+    @media (max-width: $md) {
+       // background-color:rgb(222, 135, 218) ;
+		font-size: 2rem;
+        line-height:44px;
+        margin-bottom: 10px;
+	}
+    @media (max-width: $sm) {
+		font-size: 1.5rem;
+		line-height: 30px;
+        margin-bottom: 10px;
+        //color:red;
+	}
+   
 }
 
+.dark{
+    color:white;
 
+}
+
+@media screen {
+    
+}

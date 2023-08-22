@@ -13,7 +13,7 @@
         <div class="container">
             <div class="wrapper">
                 <div class="c-item-01">
-                    <svg class="switch" onclick="switchMode()" width="43" height="23" viewBox="0 0 43 23"
+                    <svg  id="hamburger-menu" onclick="switchMode()" width="43" height="23" viewBox="0 0 43 23"
                         fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                         <path d="M1 1H28.7353" stroke="black" stroke-width="2" stroke-linecap="square" />
                         <path d="M1 11.8528H42" stroke="black" stroke-width="2" stroke-linecap="square" />
@@ -23,15 +23,16 @@
                     <p>Menu</p>
                 </div>
                 <div class="c-item-02">
-                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg width="22" height="22" id="search" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M15.4424 16.0156L20.4377 20.5209" stroke="black" stroke-width="2" />
-                        <circle cx="9.94904" cy="9.50993" r="8.5" transform="rotate(0.0599245 9.94904 9.50993)"
+                        <circle id="myCircle" cx="9.94904" cy="9.50993" r="8.5" transform="rotate(0.0599245 9.94904 9.50993)"
                             stroke="black" stroke-width="2" />
                     </svg>
 
                     <div class="vector"></div>
                     <p>Search</p>
                 </div>
+                
                 <div class="c-item-03">
                     <svg width="99" height="63" viewBox="0 0 99 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_1_205)">
@@ -370,6 +371,11 @@
             </section>
         </div>
     </footer>
+    
+    
+    <script src="../app.js"> </script>
+
+   
 </body>
 
 </html>
