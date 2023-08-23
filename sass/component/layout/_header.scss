@@ -8,9 +8,7 @@ header{
             align-items: center;
             justify-content: space-between;
             padding: 2rem 0;
-            @media (max-width: $md) {
-                padding: 1rem;
-            }
+            
             .c-item-01{
                 display: flex;
                 width: 30%;
@@ -27,6 +25,10 @@ header{
                 }
             }
     
+            svg{
+                cursor: pointer;
+            }
+
             .c-item-02{
                 width: 30%;
                 display: flex;

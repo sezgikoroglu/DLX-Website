@@ -1,11 +1,12 @@
 .section2-1{
-    .container{
-        .wrapper{
-            margin-bottom: 7.37rem;
+    margin-bottom: 7.37rem;
             @media (max-width: $md) {
                 
                 margin-bottom: 4rem;
             }
+    .container{
+        .wrapper{
+            
             
             h1{
                 padding-bottom: 2.063rem;
@@ -38,7 +39,7 @@
                             width: 33px;
                             height: 33px;
                             background-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 33 33"><path d="M33 0L23.6628 0L0 0L0 9.33721L23.6628 9.33721L23.6628 33H33V9.33721V0Z" fill="%23F89B3A"/></svg>');
-                            background-size: cover;
+                            background-size: contain;
                             background-repeat: no-repeat;
                             background-position: center center;
                         
@@ -56,10 +57,15 @@
 }
 
 .section2-2{
+    margin-bottom: 10rem;
+    @media (max-width: $sm) {
+        margin-bottom: 5rem;
+    }
+
     .container{
         .right-bar{
             .wrapper{
-                margin-bottom: 10rem;
+                
                 display: grid;
                 grid-template-columns: repeat(3, 1fr);
                 row-gap: 22px;
@@ -69,7 +75,7 @@
                 @media (max-width: $sm) {
                     grid-template-columns: repeat(2, 1fr);
                     row-gap:12px;
-                    margin-bottom: 5rem;
+                    
                 }
                 
                 .profil-card{
@@ -93,13 +99,12 @@
 }
 
 .section2-3{
-    .content{
-        margin-bottom: 17rem;
+    margin-bottom: 17rem;
         @media (max-width: $sm) {
             
             margin-bottom: 5rem;
         }
-    }
+    
     .link-list-li:last-child{
         border-bottom: none;
     }

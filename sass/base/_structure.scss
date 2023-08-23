@@ -1,5 +1,5 @@
 @use "./vars"  as v;
-@import "./global";
+//@import "./global";
 
 $sm: 769px;
 $md: 1025px;
@@ -17,7 +17,7 @@ $lg: 1200px;
 //     }
 // }
 
-.main-title {
+h1 {
     font-size: v.$font-size-big;
     font-weight: v.$font-weight-normal;
     line-height: 85px;
@@ -25,12 +25,10 @@ $lg: 1200px;
     @media (max-width: $md) {
 		font-size: 4.2rem;
 		line-height: 4.6rem;
-        
 	}
 	@media (max-width: $sm) {
 		font-size: 3rem;
 		line-height: 3.2rem;
-        
 	}
 }
 
@@ -158,12 +156,24 @@ $lg: 1200px;
 
 .underline {
     text-decoration: underline;
+    color: black;
 }
 
 .btn-light {
     background-color: black;
+    border: 1px solid black;
     color: white;
-    padding: 16px 30px;
+    padding: 1rem 2.18rem;
+    font-size: 1rem;
+    line-height: 1.1;
+    width: 25%;
+    text-align: center;
+    @media (max-width: $sm) {
+        text-align: center;
+        font-size: 12px;
+        padding: 10px 20px;
+		width: 50%;
+	}
 }
 
 .brand-sm {
@@ -249,25 +259,40 @@ $lg: 1200px;
 }
 
 .link-list-li{
-    width: 90%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    //color:v.$light-mode-text;
     border-bottom: 2px solid v.$light-mode-title;
     @media (max-width: $md) {
-        // background-color:rgb(222, 135, 218) ;
          width: 100%;
      }
     
 }
-
-.link-list-p{
-    width: 80%;
+.link-list-a{
+    width: 100%;
     line-height: 52px;
     font-size: v.$font-size-lg;
     font-weight: v.$font-weight-normal;
     margin-bottom: 22px;
+    color: black;
+    &:after{
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 14px;
+        height: 14px;
+        background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20width%3D%2214%22%20height%3D%2212%22%20viewBox%3D%220%200%2014%2012%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20fill%3D%22none%22%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M-2.62268e-07%206C-2.80374e-07%205.58579%200.335786%205.25%200.75%205.25L11.4393%205.25L7.46967%201.28033C7.17678%200.987436%207.17678%200.512562%207.46967%200.21967C7.76256%20-0.0732235%208.23744%20-0.0732235%208.53033%200.21967L13.7803%205.46967C14.0732%205.76256%2014.0732%206.23744%2013.7803%206.53033L8.53033%2011.7803C8.23744%2012.0732%207.76257%2012.0732%207.46967%2011.7803C7.17678%2011.4874%207.17678%2011.0126%207.46967%2010.7197L11.4393%206.75L0.75%206.75C0.335786%206.75%20-2.44162e-07%206.41421%20-2.62268e-07%206Z%22%20fill%3D%22%23F89B3A%22%2F%3E%3C%2Fsvg%3E');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+}
+.link-list-p{
+    width: 80%;
+    
     @media (max-width: $md) {
        // background-color:rgb(222, 135, 218) ;
 		font-size: 2rem;
@@ -280,14 +305,12 @@ $lg: 1200px;
         margin-bottom: 10px;
         //color:red;
 	}
+
+    
    
 }
 
 .dark{
     color:white;
 
-}
-
-@media screen {
-    
 }
